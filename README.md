@@ -24,6 +24,9 @@ final bool useHttps = Environment().config.useHttps;
 
 flutter run --dart-define=ENVIRONMENT=STAGING
 
+// crate page with get cli
+get create page:setting
+
 ```
 
 ![image](https://user-images.githubusercontent.com/18229355/168621168-0b1c2a77-fe27-4a88-9cc3-1e150e7d3216.png)

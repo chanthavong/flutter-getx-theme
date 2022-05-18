@@ -1,5 +1,9 @@
+// ignore_for_file: file_names
+
 Map<String, String> loLA = {
   'change_theme': 'ປ່ຽນຕິມ',
+  'darkTheme': 'ຕິມເຂັ້ມ',
+  'currency': 'ສະກຸນເງິນ',
   'change_language': 'ປ່ຽນພາສາ',
   'language': 'ພາສາ',
   'setting': 'ຕັ້ງຄ່າ',

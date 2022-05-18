@@ -28,9 +28,11 @@ class MainApp extends StatelessWidget {
       initialRoute: initialRoute,
       getPages: AppPages.routes,
       translations: LocalizationService(),
-      fallbackLocale: const Locale('lo', 'LA'),
+      fallbackLocale: const Locale('en', 'US'),
       locale: Get.deviceLocale,
       theme: AppTheme.lightTheme,
+      darkTheme: AppTheme.darkTheme,
+      themeMode: Get.isDarkMode ? ThemeMode.dark : ThemeMode.light,
       debugShowCheckedModeBanner: false,
     );
   }

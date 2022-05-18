@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_themes/component/app_drawer.dart';
 import 'package:flutter_getx_themes/config/app_config.dart';
 
 import 'package:get/get.dart';
@@ -6,45 +7,57 @@ import 'package:get/get.dart';
 import 'home_controller.dart';
 
 class HomeView extends GetView<HomeController> {
+  const HomeView({Key? key}) : super(key: key);
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HomeView: ENV:' + Environment.config.mode),
+        title: const Text('GetX Theme'),
         centerTitle: true,
       ),
+      drawer: const AppDrawer(),
       body: Center(
         child: Column(
           children: [
+            const SizedBox(height: 20),
+            Text('Application Run On Mode:' + Environment.config.mode),
+            const SizedBox(height: 20),
             Obx(() {
               return Text(
                 '${controller.count}',
                 style: Theme.of(context).textTheme.headline4,
               );
             }),
-            const Divider(),
             Text('language'.tr),
-            TextButton(
-              child: const Text('lo'),
-              onPressed: (() {
-                var locale = Locale('lo', 'LA');
-                Get.updateLocale(locale);
-              }),
-            ),
-            TextButton(
-              child: const Text('en'),
-              onPressed: (() {
-                var locale = Locale('en', 'US');
-                Get.updateLocale(locale);
-              }),
-            ),
+            const SizedBox(height: 20),
+            Row(
+              crossAxisAlignment: CrossAxisAlignment.center,
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                TextButton(
+                  child: const Text('Lao'),
+                  onPressed: (() {
+                    var locale = const Locale('lo', 'LA');
+                    Get.updateLocale(locale);
+                  }),
+                ),
+                TextButton(
+                  child: const Text('English'),
+                  onPressed: (() {
+                    var locale = const Locale('en', 'US');
+                    Get.updateLocale(locale);
+                  }),
+                ),
+              ],
+            )
           ],
         ),
       ),
       floatingActionButton: FloatingActionButton(
         onPressed: controller.increment,
         tooltip: 'Increment',
-        child: const Icon(Icons.add),
+        child: const Icon(Icons.add, color: Colors.white),
       ),
     );
   }

@@ -49,4 +49,5 @@ class AppConfig {
   static const String defaultLocale = 'lo';
   static const String appName = 'Flutter GetX Theme';
   static const String appVersion = '1.0.0';
+  static const String fontFamily = 'Chanthavong';
 }
