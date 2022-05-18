@@ -29,4 +29,7 @@ get create page:setting
 
 ```
 
+![ScreenFlow](https://user-images.githubusercontent.com/18229355/169033649-92793642-27c5-4a8a-bd09-4f67aecce3ed.gif)
+
+
 ![image](https://user-images.githubusercontent.com/18229355/168621168-0b1c2a77-fe27-4a88-9cc3-1e150e7d3216.png)
