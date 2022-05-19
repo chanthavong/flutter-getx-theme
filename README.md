@@ -20,6 +20,7 @@ samples, guidance on mobile development, and a full API reference.
 - xample state manage
 - fast config theme
 - multi language
+- multi env [dev, staging, production]
 
 
 
