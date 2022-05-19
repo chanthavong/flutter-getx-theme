@@ -37,7 +37,6 @@ get create page:setting
 
 ```
 
-![ScreenFlow](https://user-images.githubusercontent.com/18229355/169033649-92793642-27c5-4a8a-bd09-4f67aecce3ed.gif)
-
+![2022-05-19_10-05-41 (1)](https://user-images.githubusercontent.com/18229355/169195800-ede5fa5d-79fe-4e0e-9e3b-a4fe1d84eee5.gif)
 
 ![image](https://user-images.githubusercontent.com/18229355/168621168-0b1c2a77-fe27-4a88-9cc3-1e150e7d3216.png)
