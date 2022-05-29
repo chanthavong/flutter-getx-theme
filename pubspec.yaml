@@ -36,6 +36,9 @@ dependencies:
   cupertino_icons: ^1.0.2
   get_cli: ^1.7.1
   get: ^4.6.1
+  flutter_map: ^0.14.0
+  latlong2: ^0.8.1
+  location:
 get_cli:
   separator: _
   sub_folder: false

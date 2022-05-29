@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_getx_themes/app/routes/app_pages.dart';
 import 'package:flutter_getx_themes/component/app_drawer.dart';
 import 'package:flutter_getx_themes/config/app_config.dart';
 
@@ -50,7 +51,10 @@ class HomeView extends GetView<HomeController> {
                   }),
                 ),
               ],
-            )
+            ),
+            TextButton(
+                onPressed: () => Navigator.pushNamed(context, Routes.USER_MAP),
+                child: Text('map'))
           ],
         ),
       ),
